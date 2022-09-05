@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^12.2.1",
+    "@types/node": "^15.6.0",
+    "textlint-scripts": "^12.2.1",
+    "textlint-tester": "^12.2.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.2.4"
+  },
+  "name": "textlint-rule-no-date-without-actual-date",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}
