@@ -4,6 +4,7 @@ specifiers:
   '@textlint/types': ^12.2.1
   '@types/node': ^15.6.0
   date-fns: ^2.29.2
+  textlint: ^12.2.1
   textlint-scripts: ^12.2.1
   textlint-tester: ^12.2.1
   ts-node: ^10.9.1
@@ -15,6 +16,7 @@ dependencies:
 devDependencies:
   '@textlint/types': 12.2.1
   '@types/node': 15.14.9
+  textlint: 12.2.1
   textlint-scripts: 12.2.1
   textlint-tester: 12.2.1
   ts-node: 10.9.1_umfklxkb3jpuuj4dmq6zu4i2e4
