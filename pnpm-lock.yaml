@@ -3,10 +3,14 @@ lockfileVersion: 5.4
 specifiers:
   '@textlint/types': ^12.2.1
   '@types/node': ^15.6.0
+  date-fns: ^2.29.2
   textlint-scripts: ^12.2.1
   textlint-tester: ^12.2.1
   ts-node: ^10.9.1
   typescript: ^4.2.4
+
+dependencies:
+  date-fns: 2.29.2
 
 devDependencies:
   '@textlint/types': 12.2.1
@@ -1846,6 +1850,11 @@ packages:
   /crypt/0.0.2:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
     dev: true
+
+  /date-fns/2.29.2:
+    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
+    engines: {node: '>=0.11'}
+    dev: false
 
   /debug/4.3.3_supports-color@8.1.1:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
