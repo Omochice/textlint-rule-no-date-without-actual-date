@@ -1,17 +1,6 @@
 import type { TextlintRuleModule } from "@textlint/types";
-import { add, Duration, format } from "date-fns";
-
-type Marker = {
-  str: string;
-  format: string;
-  duration?: Duration;
-  convertToWeekStart?: boolean;
-};
-
-type Matched = {
-  index: number;
-  text: string;
-};
+import { add, format } from "date-fns";
+import { Marker, MatchedText } from "./types";
 
 // TODO: load markers from other source
 const markers: Marker[] = [
@@ -49,11 +38,11 @@ const fix = (marker: string): string => {
   const today = new Date();
   const delta = rule.convertToWeekStart ? Number(format(today, "i")) - 1 : 0;
   const targetDate = add(today, { days: -delta });
-  const formatted = format(add(targetDate, rule.duration ?? {}), rule.format);
-  return `${marker}(${formatted})`;
+  const actualDate = format(add(targetDate, rule.duration ?? {}), rule.format);
+  return `${marker}(${actualDate})`;
 };
 
-const detect = (text: string): Matched | undefined => {
+const detect = (text: string): MatchedText | undefined => {
   const segmenter = new Intl.Segmenter("ja", { granularity: "word" });
   for (const marker of markers) {
     const re = new RegExp(`(${marker.str})[^\(（].*[^\)）]`);
