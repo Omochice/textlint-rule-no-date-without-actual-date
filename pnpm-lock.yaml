@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@textlint/types': ^12.2.1
   '@types/node': ^15.6.0
+  babel-plugin-static-fs: ^3.0.0
   date-fns: ^2.29.2
   textlint: ^12.2.1
   textlint-scripts: ^12.2.1
@@ -16,6 +17,7 @@ dependencies:
 devDependencies:
   '@textlint/types': 12.2.1
   '@types/node': 15.14.9
+  babel-plugin-static-fs: 3.0.0
   textlint: 12.2.1
   textlint-scripts: 12.2.1
   textlint-tester: 12.2.1
