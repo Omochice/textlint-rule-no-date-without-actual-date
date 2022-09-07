@@ -4,6 +4,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
     "noEmit": true,
     "target": "es2015",
     /* Strict Type-Checking Options */

@@ -53,16 +53,20 @@ const fix = (marker: string): string => {
   return `${marker}(${formatted})`;
 };
 
-const detect = (text: string) => {
+const detect = (text: string): Matched | undefined => {
+  const segmenter = new Intl.Segmenter("ja", { granularity: "word" });
   for (const marker of markers) {
     const re = new RegExp(`(${marker.str})[^\(（].*[^\)）]`);
     const matched = re.exec(text);
     if (matched) {
-      const processed: Matched = { text: matched[1], index: matched.index };
-      return processed;
+      for (const s of segmenter.segment(text)) {
+        if (s.segment === marker.str) {
+          return { text: s.segment, index: s.index };
+        }
+      }
     }
   }
-  return null;
+  return undefined;
 };
 
 const reporter: TextlintRuleModule = (context) => {
