@@ -37,7 +37,12 @@ const reporter: TextlintRuleModule = (
   const { getSource, RuleError, Syntax, report, fixer, locator } = context;
 
   if (!isOption(options)) {
-    throw new Error("hoge");
+    throw new Error(
+      [
+        "Specified option is invalid format:",
+        `${JSON.stringify(options, undefined, 2)}`,
+      ].join("\n"),
+    );
   }
 
   return {
