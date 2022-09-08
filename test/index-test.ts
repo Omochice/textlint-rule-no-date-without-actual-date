@@ -43,3 +43,43 @@ tester.run("If text is matched but it is not date text, should pass", rule, {
     options: { lang: "ja", markers: [{ str: "今日", format: "MM/dd" }] },
   }],
 });
+
+tester.run("If text has date without actual date, should fail", rule, {
+  invalid: [{
+    text: "今日対応予定",
+    options: {
+      lang: "ja",
+      markers: [{ str: "今日", format: "MM/dd" }],
+    },
+    errors: [{
+      loc: {
+        start: { line: 1, column: 1 },
+        end: { line: 1, column: 3 },
+      },
+    }],
+  }],
+});
+
+tester.run("If text is matched multiply, should fail multiply", rule, {
+  invalid: [{
+    text: "今日と明日",
+    options: {
+      lang: "ja",
+      markers: [
+        { str: "今日", format: "MM/dd" },
+        { str: "明日", format: "MM/dd" },
+      ],
+    },
+    errors: [{
+      loc: {
+        start: { line: 1, column: 1 },
+        end: { line: 1, column: 3 },
+      },
+    }, {
+      loc: {
+        start: { line: 1, column: 4 },
+        end: { line: 1, column: 6 },
+      },
+    }],
+  }],
+});
