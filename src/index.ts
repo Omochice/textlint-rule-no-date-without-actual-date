@@ -59,7 +59,7 @@ const detect = (text: string): MatchedText | undefined => {
 };
 
 const reporter: TextlintRuleModule = (context) => {
-  const { getSource, RuleError, Syntax, report, fixer } = context;
+  const { getSource, RuleError, Syntax, report, fixer, locator } = context;
 
   return {
     async [Syntax.Str](node) {
@@ -69,6 +69,10 @@ const reporter: TextlintRuleModule = (context) => {
         report(
           node,
           new RuleError(`${matched.text} must has actual date within.`, {
+            padding: locator.range([
+              matched.index,
+              matched.index + matched.text.length,
+            ]),
             fix: fixer.replaceTextRange([
               matched.index,
               matched.index + matched.text.length,
