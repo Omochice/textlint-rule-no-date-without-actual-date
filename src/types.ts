@@ -9,7 +9,7 @@ export type Marker = {
 };
 
 export type MatchedText = {
-  index: number;
+  index: { start: number; end: number };
   text: string;
 };
 

@@ -14,20 +14,25 @@ const detect = (
   text: string,
   locale: string,
   markers: Marker[],
-): MatchedText | undefined => {
+): MatchedText[] => {
   const segmenter = new Intl.Segmenter(locale, { granularity: "word" });
-  for (const marker of markers) {
-    const re = new RegExp(`(${marker.str})[^\(（].*[^\)）]`);
-    const matched = re.exec(text);
-    if (matched) {
-      for (const s of segmenter.segment(text)) {
-        if (s.segment === marker.str) {
-          return { text: s.segment, index: s.index };
-        }
+  const matches: MatchedText[] = [];
+  if (
+    markers.some((m) => (RegExp(`(${m.str})[^\(（].*[^\)）]`).test(text)))
+  ) {
+    for (const s of segmenter.segment(text)) {
+      if (markers.some((m) => s.segment === m.str)) {
+        matches.push({
+          text: s.segment,
+          index: {
+            start: s.index,
+            end: s.index + s.segment.length,
+          },
+        });
       }
     }
   }
-  return undefined;
+  return matches;
 };
 
 const reporter: TextlintRuleModule = (
@@ -48,19 +53,19 @@ const reporter: TextlintRuleModule = (
   return {
     [Syntax.Str](node) {
       const text = getSource(node);
-      const matched = detect(text, options.lang, options.markers);
-      if (matched) {
+      const matches = detect(text, options.lang, options.markers);
+      for (const matched of matches) {
         report(
           node,
           new RuleError(`${matched.text} must has actual date within.`, {
             padding: locator.range([
-              matched.index,
-              matched.index + matched.text.length,
+              matched.index.start,
+              matched.index.end,
             ]),
             fix: fixer.replaceTextRange(
               [
-                matched.index,
-                matched.index + matched.text.length,
+                matched.index.start,
+                matched.index.end,
               ],
               fix(
                 matched.text,
