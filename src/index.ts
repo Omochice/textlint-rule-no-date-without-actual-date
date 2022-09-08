@@ -3,10 +3,6 @@ import { add, format } from "date-fns";
 import { isOption, Marker, MatchedText } from "./types";
 
 const fix = (marker: string, rule: Marker): string => {
-  // const rule = markers.find((e) => e.str === marker);
-  if (rule === undefined) {
-    throw new Error("???????");
-  }
   const today = new Date();
   const delta = rule.convertToWeekStart ? Number(format(today, "i")) - 1 : 0;
   const targetDate = add(today, { days: -delta });
