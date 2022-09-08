@@ -25,7 +25,7 @@ tester.run("If text is bracketed with harf-width bracket, should pass", rule, {
 
 tester.run("If text is bracketed with full-width bracket, should pass", rule, {
   valid: [{
-    text: "今日(09/09)対応予定",
+    text: "今日（09/09）対応予定",
     options: { lang: "ja", markers: [{ str: "今日", format: "MM/dd" }] },
   }],
 });
