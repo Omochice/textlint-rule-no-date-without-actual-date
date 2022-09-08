@@ -45,7 +45,7 @@ const reporter: TextlintRuleModule = (
   }
 
   return {
-    async [Syntax.Str](node) {
+    [Syntax.Str](node) {
       const text = getSource(node);
       const matched = detect(text, options.lang, options.markers);
       if (matched) {
