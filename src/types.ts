@@ -28,32 +28,25 @@ export function isMarker(x: unknown): x is Marker {
   return isObject(x) &&
     isString(x.str) &&
     isString(x.format) &&
-    maybe(x.duration, isDuration) &&
-    maybe(x.convertToWeekStart, isBoolean);
+    isMaybe(x.duration, isDuration) &&
+    isMaybe(x.convertToWeekStart, isBoolean);
 }
 
 export function isDuration(x: unknown): x is Duration {
   if (!isObject(x)) {
     return false;
   }
-  for (
-    const e of [
-      "years",
-      "months",
-      "weeks",
-      "days",
-      "hours",
-      "minutes",
-      "seconds",
-    ]
-  ) {
-    if (isNumber(x[e])) {
-      return true;
-    }
-  }
-  return false;
+  return [
+    "years",
+    "months",
+    "weeks",
+    "days",
+    "hours",
+    "minutes",
+    "seconds",
+  ].some((e) => isNumber(x[e]));
 }
 
-function maybe(x: unknown, f: Function): boolean {
+function isMaybe(x: unknown, f: (y: unknown) => boolean): boolean {
   return x === undefined || f(x);
 }
