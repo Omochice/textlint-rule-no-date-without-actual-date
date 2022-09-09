@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@textlint/types': ^12.2.1
+  '@types/mocha': ^9.1.1
   '@types/node': ^15.6.0
   babel-plugin-static-fs: ^3.0.0
   date-fns: ^2.29.2
@@ -17,6 +18,7 @@ dependencies:
 
 devDependencies:
   '@textlint/types': 12.2.1
+  '@types/mocha': 9.1.1
   '@types/node': 15.14.9
   babel-plugin-static-fs: 3.0.0
   textlint: 12.2.1
@@ -1478,6 +1480,10 @@ packages:
 
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
+    dev: true
+
+  /@types/mocha/9.1.1:
+    resolution: {integrity: sha512-Z61JK7DKDtdKTWwLeElSEBcWGRLY8g95ic5FoQqI9CMx0ns/Ghep3B4DfcEimiKMvtamNVULVNKEsiwV3aQmXw==}
     dev: true
 
   /@types/node/15.14.9:
@@ -3861,7 +3867,7 @@ packages:
       require-directory: 2.1.1
       string-width: 4.2.3
       y18n: 5.0.8
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.9
     dev: true
 
   /yn/3.1.1:

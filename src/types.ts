@@ -47,6 +47,6 @@ export function isDuration(x: unknown): x is Duration {
   ].some((e) => isNumber(x[e]));
 }
 
-function isMaybe(x: unknown, f: (y: unknown) => boolean): boolean {
+export function isMaybe(x: unknown, f: (y: unknown) => boolean): boolean {
   return x === undefined || f(x);
 }
