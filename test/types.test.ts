@@ -1,6 +1,10 @@
-import { equal } from "assert";
+import { ok } from "assert";
 import * as types from "../src/types";
 import { isArray, isBoolean, isNumber, isObject, isString } from "unknownutil";
+
+const ng = (x: unknown) => {
+  ok(!x);
+};
 
 const samples: {
   sample: unknown;
@@ -17,7 +21,7 @@ const samples: {
 describe("Test for `isMaybe`", () => {
   for (const sample of samples) {
     it(`If x is unknown, isMaybe(x, ${sample.func.name}) should be passed`, () => {
-      equal(types.isMaybe(undefined, sample.func), true);
+      ok(types.isMaybe(undefined, sample.func));
     });
   }
 });
@@ -26,12 +30,12 @@ describe("Test for `isDuration`", () => {
   describe("If x is not object, should be failed", () => {
     for (const sample of samples.filter((e) => e.description !== "object")) {
       it(`The case of ${sample.description}`, () => {
-        equal(types.isDuration(sample.sample), false);
+        ng(types.isDuration(sample.sample));
       });
     }
   });
   it("If x is empty object, isDuration should be failed", () => {
-    equal(types.isDuration({}), false);
+    ng(types.isDuration({}));
   });
   describe("If x has expected key as number, should be passed", () => {
     const keys = [
@@ -45,7 +49,7 @@ describe("Test for `isDuration`", () => {
     ];
     for (const k of keys) {
       it(`The case of ${k}`, () => {
-        equal(types.isDuration({ [k]: 42 }), true);
+        ok(types.isDuration({ [k]: 42 }));
       });
     }
   });
@@ -55,7 +59,7 @@ describe("Test for isMarker", () => {
   describe("If x is not object, should be failed", () => {
     for (const sample of samples.filter((e) => e.description !== "object")) {
       it(`The case of ${sample.description}`, () => {
-        equal(types.isMarker(sample.sample), false);
+        ng(types.isMarker(sample.sample));
       });
     }
   });
@@ -64,7 +68,7 @@ describe("Test for isMarker", () => {
       it(`The case that ${sample} is missing`, () => {
         const x: Record<string, unknown> = { str: "", format: "" };
         x[sample] = undefined;
-        equal(types.isMarker(x), false);
+        ng(types.isMarker(x));
       });
     }
   });
@@ -72,26 +76,24 @@ describe("Test for isMarker", () => {
     const x: Record<string, unknown> = { str: "", format: "" };
     it("If duration is `Duration`, should be passed", () => {
       x["duration"] = { "years": 0 };
-      equal(types.isMarker(x), true);
+      ok(types.isMarker(x));
     });
     it("If convertToWeekStart is boolean, should be passed", () => {
       x["convertToWeekStart"] = true;
-      equal(types.isMarker(x), true);
+      ok(types.isMarker(x));
     });
     it("But duration is not `Duration`, should be failed", () => {
-      equal(
+      ng(
         samples.filter((e) => e.description !== "object").every((e) =>
           types.isMarker({ ...x, duration: e.sample })
         ),
-        false,
       );
     });
     it("But convertToWeekStart is not boolean, should be failed", () => {
-      equal(
+      ng(
         samples.filter((e) => e.description !== "boolean").every((e) =>
           types.isMarker({ ...x, convertToWeekStart: e.sample })
         ),
-        false,
       );
     });
   });
@@ -101,7 +103,7 @@ describe("Test for `isOption`", () => {
   describe("If x is not object, should be failed", () => {
     for (const sample of samples) {
       it(`The case of ${sample.description}`, () => {
-        equal(types.isOption(sample.sample), false);
+        ng(types.isOption(sample.sample));
       });
     }
   });
@@ -113,7 +115,7 @@ describe("Test for `isOption`", () => {
     for (const sample of samples.filter((e) => e.description !== "string")) {
       it(`The case of ${sample.description}`, () => {
         x.lang = sample.sample;
-        equal(types.isOption(x), false);
+        ng(types.isOption(x));
       });
     }
   });
@@ -121,7 +123,7 @@ describe("Test for `isOption`", () => {
     for (const sample of samples.filter((e) => e.description !== "array")) {
       it(`The case of ${sample.description}`, () => {
         x.markers = sample.sample;
-        equal(types.isOption(x), false);
+        ng(types.isOption(x));
       });
     }
   });
