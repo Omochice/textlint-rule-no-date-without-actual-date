@@ -15,7 +15,6 @@
     "watch": "textlint-scripts build --watch"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.19.0",
     "@textlint/types": "^12.2.1",
     "@types/mocha": "^9.1.1",
     "@types/node": "^15.6.0",
