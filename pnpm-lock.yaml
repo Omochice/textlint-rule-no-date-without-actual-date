@@ -15,6 +15,7 @@ specifiers:
 
 dependencies:
   date-fns: 2.29.2
+  unknownutil: 2.0.0
 
 devDependencies:
   '@textlint/types': 12.2.1
@@ -26,7 +27,6 @@ devDependencies:
   textlint-tester: 12.2.1
   ts-node: 10.9.1_umfklxkb3jpuuj4dmq6zu4i2e4
   typescript: 4.8.2
-  unknownutil: 2.0.0
 
 packages:
 
@@ -3741,7 +3741,7 @@ packages:
 
   /unknownutil/2.0.0:
     resolution: {integrity: sha512-3RbTW9f6mCoEosBmC+wPuPbWA3Ni2G4lc5fixgu1i3seVH8f83oMK0kIicqcgv8W9ldLM0LiuCRUTPM9Bel/Sw==}
-    dev: true
+    dev: false
 
   /update-browserslist-db/1.0.7_browserslist@4.21.3:
     resolution: {integrity: sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==}
