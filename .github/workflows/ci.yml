@@ -20,8 +20,9 @@ jobs:
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.9.5
-          run_install: true
-      - name: Run test
+      - name: Run pnpm install
+        run: pnpm install
+      - name: Run pnpm test
         run: pnpm test
 
 
