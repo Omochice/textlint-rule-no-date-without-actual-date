@@ -7,19 +7,20 @@ jobs:
   install:
     runs-on: ubuntu-latest
     strategy:
-      node: [ 16, 18 ]
+      matrix:
+        node: [ 16, 18 ]
     steps:
       - name: Check out
         uses: actions/checkout@v3
       - name: Install Node.js (${{ matrix.node }})
         uses: actions/setup-node@v3
         with:
-          note-version: ${{ matrix.node }}
+          node-version: ${{ matrix.node }}
       - name: Install pnpm with pnpm install
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.9.5
-          run_install: false
+          run_install: true
       - name: Run test
         run: pnpm test
 
