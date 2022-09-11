@@ -30,9 +30,9 @@
   "directories": {
     "test": "test"
   },
-  "author": "",
+  "author": "Omochice",
   "license": "MIT",
-  "description": "",
+  "description": "textlint rule that disallow date without actual date.",
   "dependencies": {
     "date-fns": "^2.29.2"
   }
