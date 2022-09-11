@@ -31,9 +31,9 @@ Via `.textlintrc`(Recommended)
         "no-date-without-actual-date": {
             "lang": "ja",
             "markers": [
-                { "marker": "今日", "format": "DD/mm" },
-                { "marker": "明日", "format": "DD/mm", "duration": { "days": 1 } },
-                { "marker": "今週", "format": "DD/mm週", "convertToWeekStart": true }
+                { "str": "今日", "format": "MM/dd" },
+                { "str": "明日", "format": "MM/dd", "duration": { "days": 1 } },
+                { "str": "今週", "format": "MM/dd週", "convertToWeekStart": true }
             ]
         }
     }
