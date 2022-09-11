@@ -1,3 +1,5 @@
+[![npm test](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/ci.yml)
+
 # textlint-rule-no-date-without-actual-date
 
 [textlint](https://github.com/textlint/textlint) rule that disallow date without actual date.
