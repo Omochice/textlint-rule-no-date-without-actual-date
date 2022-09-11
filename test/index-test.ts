@@ -67,7 +67,7 @@ tester.run("If text is matched multiply, should fail multiply", rule, {
       lang: "ja",
       markers: [
         { str: "今日", format: "MM/dd" },
-        { str: "明日", format: "MM/dd" },
+        { str: "明日", format: "MM/dd", duration: { days: 1 } },
       ],
     },
     errors: [{
