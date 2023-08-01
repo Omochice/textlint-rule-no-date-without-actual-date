@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@textlint/types': ^12.2.1
   '@types/mocha': ^10.0.0
-  '@types/node': ^15.6.0
+  '@types/node': ^18.0.0
   babel-plugin-static-fs: ^3.0.0
   date-fns: ^2.29.2
   textlint: ^12.2.1
@@ -20,12 +20,12 @@ dependencies:
 devDependencies:
   '@textlint/types': 12.2.1
   '@types/mocha': 10.0.1
-  '@types/node': 15.14.9
+  '@types/node': 18.17.1
   babel-plugin-static-fs: 3.0.0
   textlint: 12.2.1
   textlint-scripts: 12.2.1
   textlint-tester: 12.2.1
-  ts-node: 10.9.1_umfklxkb3jpuuj4dmq6zu4i2e4
+  ts-node: 10.9.1_d4rof43olt2736mixmxuz6mtau
   typescript: 4.8.2
 
 packages:
@@ -1486,8 +1486,8 @@ packages:
     resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
     dev: true
 
-  /@types/node/15.14.9:
-    resolution: {integrity: sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==}
+  /@types/node/18.17.1:
+    resolution: {integrity: sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -3624,7 +3624,7 @@ packages:
     resolution: {integrity: sha512-yHeaPjCBzVaXwWl5IMUapTaTC2rn/eBYg2fsG2L+CvJd+ttFbk0ylDnpTO3wVhosmE1tQEvcebbBeKLCwScQSQ==}
     dev: true
 
-  /ts-node/10.9.1_umfklxkb3jpuuj4dmq6zu4i2e4:
+  /ts-node/10.9.1_d4rof43olt2736mixmxuz6mtau:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3643,7 +3643,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 15.14.9
+      '@types/node': 18.17.1
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
