@@ -1,5 +1,5 @@
 import { Duration } from "date-fns";
-import { isArray, isBoolean, isNumber, isObject, isString } from "unknownutil";
+import { is } from "unknownutil";
 
 export type Marker = {
   str: string;
@@ -18,35 +18,21 @@ export type Option = {
   lang: string;
 };
 
-export function isOption(x: unknown): x is Option {
-  return isObject(x) &&
-    isString(x.lang) &&
-    isArray(x.markers, isMarker);
-}
+export const isOption = is.ObjectOf({
+  lang: is.String,
+  markers: is.ArrayOf(is.ObjectOf({
+    str: is.String,
+    format: is.String,
+    duration: is.OptionalOf(is.ObjectOf({
+      years: is.OptionalOf(is.Number),
+      months: is.OptionalOf(is.Number),
+      weeks: is.OptionalOf(is.Number),
+      days: is.OptionalOf(is.Number),
+      hours: is.OptionalOf(is.Number),
+      minutes: is.OptionalOf(is.Number),
+      seconds: is.OptionalOf(is.Number),
+    })),
+    convertToWeekStart: is.OptionalOf(is.Boolean),
+  }))
+})
 
-export function isMarker(x: unknown): x is Marker {
-  return isObject(x) &&
-    isString(x.str) &&
-    isString(x.format) &&
-    isMaybe(x.duration, isDuration) &&
-    isMaybe(x.convertToWeekStart, isBoolean);
-}
-
-export function isDuration(x: unknown): x is Duration {
-  if (!isObject(x)) {
-    return false;
-  }
-  return [
-    "years",
-    "months",
-    "weeks",
-    "days",
-    "hours",
-    "minutes",
-    "seconds",
-  ].some((e) => isNumber(x[e]));
-}
-
-export function isMaybe(x: unknown, f: (y: unknown) => boolean): boolean {
-  return x === undefined || f(x);
-}

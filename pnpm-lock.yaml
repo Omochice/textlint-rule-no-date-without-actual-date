@@ -11,11 +11,11 @@ specifiers:
   textlint-tester: ^12.2.1
   ts-node: ^10.9.1
   typescript: ^4.2.4
-  unknownutil: ^2.0.0
+  unknownutil: ^3.0.0
 
 dependencies:
   date-fns: 2.29.2
-  unknownutil: 2.0.0
+  unknownutil: 3.4.0
 
 devDependencies:
   '@textlint/types': 12.2.1
@@ -3739,8 +3739,8 @@ packages:
       unist-util-is: 4.1.0
     dev: true
 
-  /unknownutil/2.0.0:
-    resolution: {integrity: sha512-3RbTW9f6mCoEosBmC+wPuPbWA3Ni2G4lc5fixgu1i3seVH8f83oMK0kIicqcgv8W9ldLM0LiuCRUTPM9Bel/Sw==}
+  /unknownutil/3.4.0:
+    resolution: {integrity: sha512-HOOnzVmNiOX+9vbamo6dPYfVN/lX3t4A5jLu5UYUIWwxZLlynR7QvTXoaenkcWRtCUHtVt4XXKIZZ0O5ea4Ysw==}
     dev: false
 
   /update-browserslist-db/1.0.7_browserslist@4.21.3:
