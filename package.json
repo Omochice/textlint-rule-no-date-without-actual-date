@@ -19,7 +19,7 @@
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.0.0",
     "babel-plugin-static-fs": "^3.0.0",
-    "textlint": "^12.2.1",
+    "textlint": "^13.0.0",
     "textlint-scripts": "^12.2.1",
     "textlint-tester": "^12.2.1",
     "ts-node": "^10.9.1",
