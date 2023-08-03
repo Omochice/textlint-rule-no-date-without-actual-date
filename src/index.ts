@@ -1,6 +1,6 @@
+import { Marker, MatchedText, isOption } from "./types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { add, format } from "date-fns";
-import { isOption, Marker, MatchedText } from "./types";
 
 const fix = (marker: string, rule: Marker): string => {
   const today = new Date();
@@ -17,9 +17,7 @@ const detect = (
 ): MatchedText[] => {
   const segmenter = new Intl.Segmenter(locale, { granularity: "word" });
   const matches: MatchedText[] = [];
-  if (
-    markers.some((m) => (RegExp(`(${m.str})[^\(（].*[^\)）]`).test(text)))
-  ) {
+  if (markers.some((m) => RegExp(`(${m.str})[^\(（].*[^\)）]`).test(text))) {
     for (const s of segmenter.segment(text)) {
       if (markers.some((m) => s.segment === m.str)) {
         matches.push({
@@ -58,15 +56,9 @@ const reporter: TextlintRuleModule = (
         report(
           node,
           new RuleError(`${matched.text} must has actual date within.`, {
-            padding: locator.range([
-              matched.index.start,
-              matched.index.end,
-            ]),
+            padding: locator.range([matched.index.start, matched.index.end]),
             fix: fixer.replaceTextRange(
-              [
-                matched.index.start,
-                matched.index.end,
-              ],
+              [matched.index.start, matched.index.end],
               fix(
                 matched.text,
                 options.markers.find((e) => e.str === matched.text) as Marker,
