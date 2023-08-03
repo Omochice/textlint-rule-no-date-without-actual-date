@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@textlint/types':
-    specifier: ^12.2.1
-    version: 12.2.1
+    specifier: ^13.0.0
+    version: 13.3.3
   '@types/mocha':
     specifier: ^10.0.0
     version: 10.0.1

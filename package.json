@@ -17,7 +17,7 @@
     "watch": "textlint-scripts build --watch"
   },
   "devDependencies": {
-    "@textlint/types": "^12.2.1",
+    "@textlint/types": "^13.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.0.0",
     "babel-plugin-static-fs": "^3.0.0",
