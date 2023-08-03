@@ -20,19 +20,22 @@ export type Option = {
 
 export const isOption = is.ObjectOf({
   lang: is.String,
-  markers: is.ArrayOf(is.ObjectOf({
-    str: is.String,
-    format: is.String,
-    duration: is.OptionalOf(is.ObjectOf({
-      years: is.OptionalOf(is.Number),
-      months: is.OptionalOf(is.Number),
-      weeks: is.OptionalOf(is.Number),
-      days: is.OptionalOf(is.Number),
-      hours: is.OptionalOf(is.Number),
-      minutes: is.OptionalOf(is.Number),
-      seconds: is.OptionalOf(is.Number),
-    })),
-    convertToWeekStart: is.OptionalOf(is.Boolean),
-  }))
-})
-
+  markers: is.ArrayOf(
+    is.ObjectOf({
+      str: is.String,
+      format: is.String,
+      duration: is.OptionalOf(
+        is.ObjectOf({
+          years: is.OptionalOf(is.Number),
+          months: is.OptionalOf(is.Number),
+          weeks: is.OptionalOf(is.Number),
+          days: is.OptionalOf(is.Number),
+          hours: is.OptionalOf(is.Number),
+          minutes: is.OptionalOf(is.Number),
+          seconds: is.OptionalOf(is.Number),
+        }),
+      ),
+      convertToWeekStart: is.OptionalOf(is.Boolean),
+    }),
+  ),
+});
