@@ -4,7 +4,7 @@ const tester = new TextLintTester();
 
 tester.run("If no text is checked, should pass", rule, {
   valid: [{
-    text: "",
+    text: "sample text",
     options: { lang: "ja", markers: [] },
   }],
 });
