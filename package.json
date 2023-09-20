@@ -9,8 +9,8 @@
     "src/"
   ],
   "scripts": {
-    "fmt": "rome format --write src",
-    "lint": "rome check --formatter-enabled true src",
+    "fmt": "biome format --write src",
+    "lint": "biome check --formatter-enabled true src",
     "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "prepublish": "npm run --if-present build",
