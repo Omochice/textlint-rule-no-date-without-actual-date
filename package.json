@@ -24,7 +24,7 @@
     "@biomejs/biome": "^1.0.0",
     "textlint": "^13.0.0",
     "textlint-scripts": "^13.0.0",
-    "textlint-tester": "^13.0.0",
+    "textlint-tester": "^14.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.0"
   },
