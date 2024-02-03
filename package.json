@@ -22,7 +22,7 @@
     "@types/node": "^20.0.0",
     "babel-plugin-static-fs": "^3.0.0",
     "@biomejs/biome": "^1.0.0",
-    "textlint": "^13.0.0",
+    "textlint": "^14.0.0",
     "textlint-scripts": "^13.0.0",
     "textlint-tester": "^14.0.0",
     "ts-node": "^10.9.1",
