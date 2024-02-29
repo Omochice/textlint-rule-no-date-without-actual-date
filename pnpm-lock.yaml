@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   date-fns:
-    specifier: ^2.29.2
-    version: 2.29.2
+    specifier: ^3.0.0
+    version: 3.0.0
   unknownutil:
     specifier: ^3.0.0
     version: 3.4.0
@@ -2149,9 +2149,8 @@ packages:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
     dev: true
 
-  /date-fns@2.29.2:
-    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
-    engines: {node: '>=0.11'}
+  /date-fns@3.0.0:
+    resolution: {integrity: sha512-xjDz3rNN9jp+Lh3P/4MeY4E5HkaRnEnrJCcrdRZnKdn42gJlIe6hwrrwVXePRwVR2kh1UcMnz00erYBnHF8PFA==}
     dev: false
 
   /debug@4.3.4(supports-color@8.1.1):

@@ -36,7 +36,7 @@
   "license": "MIT",
   "description": "textlint rule that disallow date without actual date.",
   "dependencies": {
-    "date-fns": "^2.29.2",
+    "date-fns": "^3.0.0",
     "unknownutil": "^3.0.0"
   }
 }
