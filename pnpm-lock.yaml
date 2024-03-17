@@ -10,7 +10,7 @@ dependencies:
     version: 3.3.1
   unknownutil:
     specifier: ^3.0.0
-    version: 3.16.3
+    version: 3.17.0
 
 devDependencies:
   '@biomejs/biome':
@@ -3940,8 +3940,8 @@ packages:
       unist-util-is: 4.1.0
     dev: true
 
-  /unknownutil@3.16.3:
-    resolution: {integrity: sha512-dBvDsEe+aUKP0ORQ8qX5O1PDEmA3Y529TGufKDlLzaNWXzy/BMgCWK1YAMs+zB1FRIpgDvXkv50WPDdJd5UGgQ==}
+  /unknownutil@3.17.0:
+    resolution: {integrity: sha512-kjR/Sx+TfVTtNG6ELufddoLHOoePF9mFzIqF/W7cBg5qrSabOsB/g3NfwDPE/fPEmvPtn9EVz+SOb81TmpqW8w==}
     dev: false
 
   /update-browserslist-db@1.0.11(browserslist@4.21.10):
