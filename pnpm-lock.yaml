@@ -13,7 +13,7 @@ importers:
         version: 3.5.0
       unknownutil:
         specifier: ^3.0.0
-        version: 3.17.0
+        version: 3.18.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.0.0
@@ -2099,8 +2099,8 @@ packages:
   unist-util-visit-parents@3.1.1:
     resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
 
-  unknownutil@3.17.0:
-    resolution: {integrity: sha512-kjR/Sx+TfVTtNG6ELufddoLHOoePF9mFzIqF/W7cBg5qrSabOsB/g3NfwDPE/fPEmvPtn9EVz+SOb81TmpqW8w==}
+  unknownutil@3.18.1:
+    resolution: {integrity: sha512-xUxVwGuRfA3TqGwiulvZ8WHR4zTs/u9rN4ACqjVPVU86dBRkerVdwYb4o0c+hfJjsUufNO5pL0bjfB9UELJVOQ==}
 
   update-browserslist-db@1.1.0:
     resolution: {integrity: sha512-EdRAaAyk2cUE1wOf2DkEhzxqOQvFOoRJFNS6NeyJ01Gp2beMRpBAINjM2iDXE3KCuKhwnvHIQCJm6ThL2Z+HzQ==}
@@ -4580,7 +4580,7 @@ snapshots:
       '@types/unist': 2.0.6
       unist-util-is: 4.1.0
 
-  unknownutil@3.17.0: {}
+  unknownutil@3.18.1: {}
 
   update-browserslist-db@1.1.0(browserslist@4.23.3):
     dependencies:
