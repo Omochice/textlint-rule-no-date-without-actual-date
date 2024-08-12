@@ -21,8 +21,8 @@ jobs:
       - name: Install pnpm with pnpm install
         uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
         with:
-          version: latest
-      - run: pnpm install
+          version: 9.6.0  # renovate: depName=pnpm
+          run_install: true
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
