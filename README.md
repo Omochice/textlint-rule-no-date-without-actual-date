@@ -45,7 +45,7 @@ The fields `lang` and `markers` are needed.
 
 `lang` is used for `Intl.Segmenter`. (see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/Segmenter)
 
-`markers` is used for calculate date by [`date-fns`](https://github.com/date-fns/date-fns). (see https://date-fns.org/v2.29.2/docs/format)
+`markers` is used for calculate date by [`date-fns`](https://github.com/date-fns/date-fns). (see https://date-fns.org/docs/format)
 
 ### Build
 
