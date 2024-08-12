@@ -1,4 +1,4 @@
-import { ok } from "assert";
+import { ok } from "node:assert";
 import { isOption } from "../src/types";
 
 describe("test about isOption", () => {
