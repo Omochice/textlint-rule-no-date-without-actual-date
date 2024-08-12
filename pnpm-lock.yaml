@@ -24,7 +24,7 @@ devDependencies:
     version: 10.0.1
   '@types/node':
     specifier: ^20.0.0
-    version: 20.11.28
+    version: 20.14.15
   babel-plugin-static-fs:
     specifier: ^3.0.0
     version: 3.0.0
@@ -39,7 +39,7 @@ devDependencies:
     version: 14.0.0
   ts-node:
     specifier: ^10.9.1
-    version: 10.9.1(@types/node@20.11.28)(typescript@5.4.2)
+    version: 10.9.1(@types/node@20.14.15)(typescript@5.4.2)
   typescript:
     specifier: ^5.0.0
     version: 5.4.2
@@ -1753,8 +1753,8 @@ packages:
     resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
     dev: true
 
-  /@types/node@20.11.28:
-    resolution: {integrity: sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==}
+  /@types/node@20.14.15:
+    resolution: {integrity: sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -3742,7 +3742,7 @@ packages:
       mocha: 10.2.0
       pkg-to-readme: 1.1.2
       textlint-tester: 14.0.0
-      ts-node: 10.9.1(@types/node@20.11.28)(typescript@5.4.2)
+      ts-node: 10.9.1(@types/node@20.14.15)(typescript@5.4.2)
       typescript: 5.4.2
     transitivePeerDependencies:
       - supports-color
@@ -3825,7 +3825,7 @@ packages:
     resolution: {integrity: sha512-yHeaPjCBzVaXwWl5IMUapTaTC2rn/eBYg2fsG2L+CvJd+ttFbk0ylDnpTO3wVhosmE1tQEvcebbBeKLCwScQSQ==}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.11.28)(typescript@5.4.2):
+  /ts-node@10.9.1(@types/node@20.14.15)(typescript@5.4.2):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3844,7 +3844,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 20.11.28
+      '@types/node': 20.14.15
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
