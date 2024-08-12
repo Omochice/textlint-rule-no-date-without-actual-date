@@ -39,5 +39,5 @@
     "date-fns": "^3.0.0",
     "unknownutil": "^3.0.0"
   },
-  "packageManager": "pnpm@9.6.0"
+  "packageManager": "pnpm@9.7.0"
 }
