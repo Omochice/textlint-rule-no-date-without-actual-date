@@ -10,7 +10,7 @@ importers:
     dependencies:
       date-fns:
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.1.0
       unknownutil:
         specifier: ^3.0.0
         version: 3.18.1
@@ -1072,8 +1072,8 @@ packages:
   crypt@0.0.2:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
 
-  date-fns@4.0.0:
-    resolution: {integrity: sha512-6K33+I8fQ5otvHgLIvKK1xmMbLAh0pduyrx7dwMXKiGYeoWhmk6M3Zoak9n7bXHMJQlHq1yqmdGy1QxKddJjUA==}
+  date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
   debug@4.3.6:
     resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
@@ -3503,7 +3503,7 @@ snapshots:
 
   crypt@0.0.2: {}
 
-  date-fns@4.0.0: {}
+  date-fns@4.1.0: {}
 
   debug@4.3.6(supports-color@8.1.1):
     dependencies:
