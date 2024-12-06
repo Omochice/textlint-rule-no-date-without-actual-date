@@ -35,7 +35,7 @@
     "@types/mocha": "^10.0.0",
     "@types/node": "^22.0.0",
     "babel-plugin-static-fs": "^3.0.0",
-    "npm-run-all2": "^6.2.2",
+    "npm-run-all2": "^7.0.0",
     "sort-package-json": "^2.10.0",
     "textlint": "^14.0.0",
     "textlint-scripts": "^14.0.0",
