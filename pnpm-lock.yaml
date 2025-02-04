@@ -26,7 +26,7 @@ importers:
         version: 10.0.10
       '@types/node':
         specifier: ^22.0.0
-        version: 22.13.0
+        version: 22.13.1
       babel-plugin-static-fs:
         specifier: ^3.0.0
         version: 3.0.0
@@ -41,13 +41,13 @@ importers:
         version: 14.4.2
       textlint-scripts:
         specifier: ^14.0.0
-        version: 14.4.2(ts-node@10.9.2(@types/node@22.13.0)(typescript@5.7.3))(typescript@5.7.3)
+        version: 14.4.2(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3)
       textlint-tester:
         specifier: ^14.0.0
         version: 14.4.2
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.2(@types/node@22.13.0)(typescript@5.7.3)
+        version: 10.9.2(@types/node@22.13.1)(typescript@5.7.3)
       typescript:
         specifier: ^5.0.0
         version: 5.7.3
@@ -747,8 +747,8 @@ packages:
   '@types/mocha@10.0.10':
     resolution: {integrity: sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==}
 
-  '@types/node@22.13.0':
-    resolution: {integrity: sha512-ClIbNe36lawluuvq3+YYhnIN2CELi+6q8NpnM7PYp4hBn/TatfboPgVSm2rwKRfnV2M+Ty9GWDFI64KEe+kysA==}
+  '@types/node@22.13.1':
+    resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2958,7 +2958,7 @@ snapshots:
 
   '@types/mocha@10.0.10': {}
 
-  '@types/node@22.13.0':
+  '@types/node@22.13.1':
     dependencies:
       undici-types: 6.20.0
 
@@ -4095,7 +4095,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  textlint-scripts@14.4.2(ts-node@10.9.2(@types/node@22.13.0)(typescript@5.7.3))(typescript@5.7.3):
+  textlint-scripts@14.4.2(ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3))(typescript@5.7.3):
     dependencies:
       '@babel/cli': 7.26.4(@babel/core@7.26.0)
       '@babel/core': 7.26.0
@@ -4109,7 +4109,7 @@ snapshots:
       pkg-to-readme: 3.0.1
       textlint-tester: 14.4.2
     optionalDependencies:
-      ts-node: 10.9.2(@types/node@22.13.0)(typescript@5.7.3)
+      ts-node: 10.9.2(@types/node@22.13.1)(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
       - supports-color
@@ -4165,14 +4165,14 @@ snapshots:
 
   trough@1.0.5: {}
 
-  ts-node@10.9.2(@types/node@22.13.0)(typescript@5.7.3):
+  ts-node@10.9.2(@types/node@22.13.1)(typescript@5.7.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.13.0
+      '@types/node': 22.13.1
       acorn: 8.14.0
       acorn-walk: 8.3.4
       arg: 4.1.3
