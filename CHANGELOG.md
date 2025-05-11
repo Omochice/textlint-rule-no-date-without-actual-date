@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v1.0.3...v1.0.4) (2025-05-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency date-fns to v4 ([#94](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/issues/94)) ([2ac4c27](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/commit/2ac4c2757cd2d66223e6ba2e805632b14ca5898c))
+* **deps:** update dependency date-fns to v4.1.0 ([5e67327](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/commit/5e6732797fd70b64301da9187b71a2a673c9a2f7))
+
 ## [1.0.3](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v1.0.2...v1.0.3) (2024-08-12)
 
 
