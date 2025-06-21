@@ -25,8 +25,8 @@ importers:
         specifier: 10.0.10
         version: 10.0.10
       '@types/node':
-        specifier: 22.15.31
-        version: 22.15.31
+        specifier: 22.15.32
+        version: 22.15.32
       babel-plugin-static-fs:
         specifier: 3.0.0
         version: 3.0.0
@@ -41,13 +41,13 @@ importers:
         version: 14.8.1
       textlint-scripts:
         specifier: 14.8.1
-        version: 14.8.1(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))(typescript@5.8.3)
+        version: 14.8.1(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3)
       textlint-tester:
         specifier: 14.8.0
         version: 14.8.0
       ts-node:
         specifier: 10.9.2
-        version: 10.9.2(@types/node@22.15.31)(typescript@5.8.3)
+        version: 10.9.2(@types/node@22.15.32)(typescript@5.8.3)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -786,8 +786,8 @@ packages:
   '@types/mocha@10.0.10':
     resolution: {integrity: sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==}
 
-  '@types/node@22.15.31':
-    resolution: {integrity: sha512-jnVe5ULKl6tijxUhvQeNbQG/84fHfg+yMak02cT8QVhBx/F05rAVxCGBYYTh2EKz22D6JF5ktXuNwdx7b9iEGw==}
+  '@types/node@22.15.32':
+    resolution: {integrity: sha512-3jigKqgSjsH6gYZv2nEsqdXfZqIFGAV36XYYjf9KGZ3PSG+IhLecqPnI310RvjutyMwifE2hhhNEklOUrvx/wA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3353,7 +3353,7 @@ snapshots:
 
   '@types/mocha@10.0.10': {}
 
-  '@types/node@22.15.31':
+  '@types/node@22.15.32':
     dependencies:
       undici-types: 6.21.0
 
@@ -4774,7 +4774,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  textlint-scripts@14.8.1(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))(typescript@5.8.3):
+  textlint-scripts@14.8.1(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3):
     dependencies:
       '@babel/cli': 7.27.2(@babel/core@7.27.4)
       '@babel/core': 7.27.4
@@ -4788,7 +4788,7 @@ snapshots:
       pkg-to-readme: 3.0.1
       textlint-tester: 14.8.1
     optionalDependencies:
-      ts-node: 10.9.2(@types/node@22.15.31)(typescript@5.8.3)
+      ts-node: 10.9.2(@types/node@22.15.32)(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
@@ -4856,14 +4856,14 @@ snapshots:
 
   trough@1.0.5: {}
 
-  ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3):
+  ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.15.31
+      '@types/node': 22.15.32
       acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
