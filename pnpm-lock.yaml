@@ -40,8 +40,8 @@ importers:
         specifier: 14.8.4
         version: 14.8.4
       textlint-scripts:
-        specifier: 14.8.1
-        version: 14.8.1(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3)
+        specifier: 14.8.4
+        version: 14.8.4(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3)
       textlint-tester:
         specifier: 14.8.4
         version: 14.8.4
@@ -2110,8 +2110,8 @@ packages:
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
-  textlint-scripts@14.8.1:
-    resolution: {integrity: sha512-/+Jza464nHY/EgBeTJaCp+BjFtzvoegjEf5v8WS/ksLRNZCW9c6DDY8oRbpye5CJzdcnw7rgG1fGU11zkbzyvQ==}
+  textlint-scripts@14.8.4:
+    resolution: {integrity: sha512-2aGgkh6IkpimDKuRtj46NQ8cH+kslntS6wNLj3HCJdIOK9xP5zABLgyf/1ZVZZsLAZugDTZaHHNbv+tzUZtMVg==}
     engines: {node: '>=18.19.0'}
     hasBin: true
     peerDependencies:
@@ -4679,7 +4679,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  textlint-scripts@14.8.1(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3):
+  textlint-scripts@14.8.4(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))(typescript@5.8.3):
     dependencies:
       '@babel/cli': 7.27.2(@babel/core@7.27.4)
       '@babel/core': 7.27.4
