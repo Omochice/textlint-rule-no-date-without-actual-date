@@ -33,7 +33,7 @@
     "@biomejs/biome": "1.9.4",
     "@textlint/types": "14.8.4",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.15.33",
+    "@types/node": "22.15.34",
     "babel-plugin-static-fs": "3.0.0",
     "npm-run-all2": "8.0.4",
     "sort-package-json": "3.3.1",
