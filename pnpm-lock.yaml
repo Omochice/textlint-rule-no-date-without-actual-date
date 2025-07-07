@@ -19,8 +19,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@textlint/types':
-        specifier: 14.8.4
-        version: 14.8.4
+        specifier: 15.2.0
+        version: 15.2.0
       '@types/mocha':
         specifier: 10.0.10
         version: 10.0.10
