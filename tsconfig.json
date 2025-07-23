@@ -1,22 +1,21 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    /* Basic Options */
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "noEmit": true,
-    "target": "es2015",
-    /* Strict Type-Checking Options */
+    "outDir": "./lib/",
+    "target": "ESNext",
+    "sourceMap": true,
+    "declaration": true,
+    "lib": ["esnext", "dom"],
     "strict": true,
-    /* Additional Checks */
-    /* Report errors on unused locals. */
     "noUnusedLocals": true,
-    /* Report errors on unused parameters. */
     "noUnusedParameters": true,
-    /* Report error when not all code paths in function return a value. */
     "noImplicitReturns": true,
-    /* Report errors for fallthrough cases in switch statement. */
-    "noFallthroughCasesInSwitch": true
-  }
+    "noFallthroughCasesInSwitch": true,
+    "erasableSyntaxOnly": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [".git", "node_modules"]
 }
