@@ -17,12 +17,12 @@
   ],
   "scripts": {
     "build": "textlint-scripts build",
+    "check": "biome ci",
     "clean-pkg-json": "clean-pkg-json",
     "fmt": "npm-run-all2 fmt:*",
     "fmt:biome:check": "biome check --write --unsafe .",
     "fmt:biome:format": "biome format --write .",
     "fmt:package": "sort-package-json",
-    "lint": "biome check --formatter-enabled true src",
     "prepack": "npm-run-all2 --sequential build clean-pkg-json",
     "test": "textlint-scripts test",
     "watch": "textlint-scripts build --watch"

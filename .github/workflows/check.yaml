@@ -77,7 +77,7 @@ jobs:
         with:
           run_install: true
       - name: Run biome check
-        run: pnpm run lint
+        run: pnpm run check
       - name: Run pnpm test
         run: pnpm run test
   status-check:
