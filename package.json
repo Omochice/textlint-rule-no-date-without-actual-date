@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "build": "textlint-scripts build",
-    "fmt": "npm-run-all fmt:*",
+    "fmt": "npm-run-all2 fmt:*",
     "fmt:code": "biome format --write src",
     "fmt:package": "sort-package-json",
     "lint": "biome check --formatter-enabled true src",
