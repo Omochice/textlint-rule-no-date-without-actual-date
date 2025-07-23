@@ -47,24 +47,6 @@ The fields `lang` and `markers` are needed.
 
 `markers` is used for calculate date by [`date-fns`](https://github.com/date-fns/date-fns). (see https://date-fns.org/docs/format)
 
-### Build
-
-Builds source codes for publish to the `lib` folder.
-You can write ES2015+ source codes in `src/` folder.
-
-```console
-$ npm run build
-```
-
-### Tests
-
-Run test code in `test` folder.
-Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tester).
-
-```console
-$ npm test
-```
-
 ## License
 
 MIT
