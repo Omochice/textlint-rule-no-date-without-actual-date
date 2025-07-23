@@ -16,13 +16,13 @@
     "src/"
   ],
   "scripts": {
-    "fmt": "npm-run-all fmt:*",
-    "fmt:package": "sort-package-json",
-    "fmt:code": "biome format --write src",
-    "lint": "biome check --formatter-enabled true src",
-    "test": "textlint-scripts test",
     "build": "textlint-scripts build",
+    "fmt": "npm-run-all fmt:*",
+    "fmt:code": "biome format --write src",
+    "fmt:package": "sort-package-json",
+    "lint": "biome check --formatter-enabled true src",
     "prepublish": "npm run --if-present build",
+    "test": "textlint-scripts test",
     "watch": "textlint-scripts build --watch"
   },
   "dependencies": {
@@ -30,7 +30,7 @@
     "unknownutil": "^3.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.1.2",
     "@textlint/types": "15.2.0",
     "@types/mocha": "10.0.10",
     "@types/node": "22.16.5",
