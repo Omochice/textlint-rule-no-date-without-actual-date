@@ -9,7 +9,7 @@
       customType: "jsonata",
       fileFormat: "yaml",
       managerFilePatterns: [
-        ".github/workflows/check.yml",
+        ".github/workflows/check.yaml",
       ],
       matchStrings: [
         "{ 'currentValue': jobs.`check-typescript`.strategy.matrix.node[0] }",
