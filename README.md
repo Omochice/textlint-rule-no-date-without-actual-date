@@ -1,4 +1,4 @@
-[![Checks for push](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/push.yaml/badge.svg)](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/push.yaml)
+[![Checks for push](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/check.yaml/badge.svg)](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/actions/workflows/check.yaml)
 [![npm version](https://flat.badgen.net/npm/v/textlint-rule-no-date-without-actual-date?color=yellow)](https://npmjs.com/package/textlint-rule-no-date-without-actual-date)
 
 # textlint-rule-no-date-without-actual-date
