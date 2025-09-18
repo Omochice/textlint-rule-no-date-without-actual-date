@@ -25,7 +25,7 @@ jobs:
               - .github/workflows/*.yaml
               - aqua.yaml
             ts:
-              - .github/workflows/push.yml
+              - .github/workflows/check.yaml
               - pnpm-lock.yml
               - turbo.json
               - biome.json
