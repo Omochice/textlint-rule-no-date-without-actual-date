@@ -75,6 +75,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           cache: pnpm
+      - run: pnpm install
       - name: Run biome check
         run: pnpm run check
       - name: Run pnpm test
