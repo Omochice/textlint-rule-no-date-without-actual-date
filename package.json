@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
-    "@textlint/types": "15.2.2",
+    "@textlint/types": "15.2.3",
     "@types/mocha": "10.0.10",
     "@types/node": "22.18.9",
     "babel-plugin-static-fs": "3.0.0",
