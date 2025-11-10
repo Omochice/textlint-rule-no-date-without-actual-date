@@ -46,8 +46,8 @@ importers:
         specifier: 15.2.3
         version: 15.2.3(ts-node@10.9.2(@types/node@24.10.0)(typescript@5.9.3))(typescript@5.9.3)
       textlint-tester:
-        specifier: 15.2.3
-        version: 15.2.3
+        specifier: 15.3.0
+        version: 15.3.0
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@24.10.0)(typescript@5.9.3)
@@ -2089,6 +2089,9 @@ packages:
 
   textlint-tester@15.2.3:
     resolution: {integrity: sha512-VEbAYIyNppxA8/lGcw3HaMYBU3839S+OJv9ZleTLei2knCIumJO2cXLgWXEQdLYls1yy/xJFyEXMdxoLMz4s7A==}
+
+  textlint-tester@15.3.0:
+    resolution: {integrity: sha512-01UkJknQSFLq4Qi5QC657SN8juLdxbVXb/9lhK6GNuzK+A5am9+AowzBXuC8N5HK5mb01pAdh6h3BD0UEE1/kQ==}
 
   textlint@15.3.0:
     resolution: {integrity: sha512-DqyVZSyMFNoDbHzu3rqXpN8kTIaBxr9SahwMzwwXfblhjBuXvDFdPqZ0XOLPzWL5ASsUNz0x7DNoA2J9K/+6xg==}
@@ -4686,6 +4689,17 @@ snapshots:
       '@textlint/textlint-plugin-markdown': 15.2.3
       '@textlint/textlint-plugin-text': 15.2.3
       '@textlint/types': 15.2.3
+    transitivePeerDependencies:
+      - supports-color
+
+  textlint-tester@15.3.0:
+    dependencies:
+      '@textlint/ast-node-types': 15.3.0
+      '@textlint/feature-flag': 15.3.0
+      '@textlint/kernel': 15.3.0
+      '@textlint/textlint-plugin-markdown': 15.3.0
+      '@textlint/textlint-plugin-text': 15.3.0
+      '@textlint/types': 15.3.0
     transitivePeerDependencies:
       - supports-color
 
