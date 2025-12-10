@@ -43,8 +43,8 @@ importers:
         specifier: 15.5.0
         version: 15.5.0
       textlint-scripts:
-        specifier: 15.4.1
-        version: 15.4.1(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3)
+        specifier: 15.5.0
+        version: 15.5.0(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3)
       textlint-tester:
         specifier: 15.4.1
         version: 15.4.1
@@ -2042,8 +2042,8 @@ packages:
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
-  textlint-scripts@15.4.1:
-    resolution: {integrity: sha512-FnZ9r6hOR51KMzldmoS8jI9taEwJ8mDJB3kslJ6DPktH6jn4TUaqhICqMIQ+SGgMzuf9eSJuaH3xwVJl+a0AhA==}
+  textlint-scripts@15.5.0:
+    resolution: {integrity: sha512-EziPX+/b0eMS+AkT0VrIhD1ul7mwMX9CVVHtWCAKcEglRUIY4vnaRJHcTc12bpbk7loEQJGqDAwVWnFvfXfI6A==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
@@ -2057,6 +2057,9 @@ packages:
 
   textlint-tester@15.4.1:
     resolution: {integrity: sha512-icw+FndQ9aw8hICfyrG9fa5Tv11DSMgeBfwikenvi9j9qcdDMiszHdm3KxEBJvgYrH5OlKaQa2d8wU5qrfxC3w==}
+
+  textlint-tester@15.5.0:
+    resolution: {integrity: sha512-0/9aa/KQQjXL4zdzZEKBsaX0W/FiFVL3XPc2q8kf8Cak38ySe3e4MZmA2fyezMTXIr19vYmY4IrEpGaZl1GN9w==}
 
   textlint@15.5.0:
     resolution: {integrity: sha512-CpdpwEKSewYMpKeoSFbMqTxKsyqjbJqPg+O3EUj0IsK3Lt+YD17mT3Rm7ryuHSbFB7Qw2EIdCx8Sjh+zfx7Heg==}
@@ -4122,7 +4125,7 @@ snapshots:
       glob: 10.5.0
       he: 1.2.0
       is-path-inside: 3.0.3
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       log-symbols: 4.1.0
       minimatch: 9.0.5
       ms: 2.1.3
@@ -4572,7 +4575,7 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  textlint-scripts@15.4.1(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3):
+  textlint-scripts@15.5.0(ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
       '@babel/cli': 7.28.3(@babel/core@7.28.5)
       '@babel/core': 7.28.5
@@ -4584,7 +4587,7 @@ snapshots:
       cross-spawn: 7.0.6
       mocha: 11.7.5
       pkg-to-readme: 3.0.1
-      textlint-tester: 15.4.1
+      textlint-tester: 15.5.0
     optionalDependencies:
       ts-node: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
       typescript: 5.9.3
@@ -4599,6 +4602,17 @@ snapshots:
       '@textlint/textlint-plugin-markdown': 15.4.1
       '@textlint/textlint-plugin-text': 15.4.1
       '@textlint/types': 15.4.1
+    transitivePeerDependencies:
+      - supports-color
+
+  textlint-tester@15.5.0:
+    dependencies:
+      '@textlint/ast-node-types': 15.5.0
+      '@textlint/feature-flag': 15.5.0
+      '@textlint/kernel': 15.5.0
+      '@textlint/textlint-plugin-markdown': 15.5.0
+      '@textlint/textlint-plugin-text': 15.5.0
+      '@textlint/types': 15.5.0
     transitivePeerDependencies:
       - supports-color
 
