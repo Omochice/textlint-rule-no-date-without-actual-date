@@ -19,8 +19,8 @@ importers:
         specifier: 2.4.15
         version: 2.4.15
       '@textlint/types':
-        specifier: 15.6.1
-        version: 15.6.1
+        specifier: 15.7.0
+        version: 15.7.0
       '@types/mocha':
         specifier: 10.0.10
         version: 10.0.10
@@ -722,6 +722,9 @@ packages:
   '@textlint/ast-node-types@15.6.1':
     resolution: {integrity: sha512-KXUhbpBctWkSumyNwFQBufwWCcjdxARGVnlH6AfERaFAnpi300L8og+l2Hs/bIqkXu26T5tIs7jNnRgUs20hmQ==}
 
+  '@textlint/ast-node-types@15.7.0':
+    resolution: {integrity: sha512-wZILFXsRf2gGK9k0Fr69GUdfuZV9CrtByga8Qkw0CLyKBBfZXdNQlJF2XdZ2Ju9ggrTbAWehGo0RjCsAHSBWtA==}
+
   '@textlint/ast-tester@15.6.1':
     resolution: {integrity: sha512-rwFi8hkj9laY/bJsDSAsut7XyJWDCyN4VaGVhqQhTcFMmI/nOVsCyzTb35Z7a8tqeSFGs88gWZ2fIfjwUDFnbQ==}
 
@@ -766,6 +769,9 @@ packages:
 
   '@textlint/types@15.6.1':
     resolution: {integrity: sha512-dRdyTAMRaqcU5eHpJWgTq9kcKGErs+cVVFwNTP3gUAFDJxEVxdOlJU2zjMgzJAzf/4WfOE6UJ56Mmn09acxmzw==}
+
+  '@textlint/types@15.7.0':
+    resolution: {integrity: sha512-soItNoFZ8Ua4WCgWwOaTEEyTkX7bjArwVxhN1F2UySeqPsP8QeRiKNUjAIfWQFHddTY6UYR1sHaEh+O0sQPv0Q==}
 
   '@textlint/utils@15.6.1':
     resolution: {integrity: sha512-u0ccWsfnSu5W3SVSOETDuA897uQZmqJ9504L8ewYUO5ecC4+Dzl4K2x9eECoEkv4V3zEyK9yWkw2VSVl/UB9mg==}
@@ -3103,6 +3109,8 @@ snapshots:
 
   '@textlint/ast-node-types@15.6.1': {}
 
+  '@textlint/ast-node-types@15.7.0': {}
+
   '@textlint/ast-tester@15.6.1':
     dependencies:
       '@textlint/ast-node-types': 15.6.1
@@ -3221,6 +3229,10 @@ snapshots:
   '@textlint/types@15.6.1':
     dependencies:
       '@textlint/ast-node-types': 15.6.1
+
+  '@textlint/types@15.7.0':
+    dependencies:
+      '@textlint/ast-node-types': 15.7.0
 
   '@textlint/utils@15.6.1': {}
 
