@@ -230,8 +230,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       clean-pkg-json:
-        specifier: 1.4.2
-        version: 1.4.2
+        specifier: 2.0.0
+        version: 2.0.0
       npm-run-all2:
         specifier: 9.0.1
         version: 9.0.1
@@ -1173,8 +1173,9 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  clean-pkg-json@1.4.2:
-    resolution: {integrity: sha512-o201s9wWOYoZSRui4QyARSFc3n0IcYDu62hkJCQGX1eshSSQ/90QhS/KveWp/QlXSqcF/g/q2+IINj25V1BMKw==}
+  clean-pkg-json@2.0.0:
+    resolution: {integrity: sha512-HfgaeXf7xc2xEg28rKAb6iJ7KaBU6Bu1F+wefBUEm142fYvnn+dKuBg2WEwjv7hIs1S4tu/qdLK9wek03OolBQ==}
+    engines: {node: '>=22'}
     hasBin: true
 
   cliui@8.0.1:
@@ -3640,7 +3641,7 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  clean-pkg-json@1.4.2: {}
+  clean-pkg-json@2.0.0: {}
 
   cliui@8.0.1:
     dependencies:
