@@ -35,7 +35,7 @@
     "@biomejs/biome": "2.4.16",
     "@textlint/types": "15.7.1",
     "@types/mocha": "10.0.10",
-    "@types/node": "24.13.1",
+    "@types/node": "24.13.2",
     "babel-plugin-static-fs": "3.0.0",
     "clean-pkg-json": "1.4.2",
     "npm-run-all2": "9.0.1",
