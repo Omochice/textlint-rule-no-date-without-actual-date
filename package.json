@@ -44,7 +44,7 @@
     "textlint-scripts": "15.7.1",
     "textlint-tester": "15.7.1",
     "ts-node": "10.9.2",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "packageManager": "pnpm@11.15.1",
   "devEngines": {
