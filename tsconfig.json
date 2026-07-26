@@ -2,8 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
+    "rootDir": "./src/",
     "outDir": "./lib/",
     "target": "ESNext",
     "sourceMap": true,
