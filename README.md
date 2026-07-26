@@ -14,6 +14,12 @@ Like:
 Sometime, `今日` is required to be `今日(<actual-date>)`.
 
 
+## Requirements
+
+This package is published as an ES module, so it needs a textlint that loads rule modules with dynamic `import()`.
+textlint does so as of v13, and the supported major versions are declared in `peerDependencies`.
+Older textlint loads rules with `require()`, which only works on Node.js versions that allow `require()` of an ES module.
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
