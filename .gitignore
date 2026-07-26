@@ -33,3 +33,6 @@ npm-debug.log
 
 # Publish src/ instead dist/
 /dist
+
+# pnpm store created when store-dir is resolved inside the repository
+/.pnpm-store
