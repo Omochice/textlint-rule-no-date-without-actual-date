@@ -10,16 +10,16 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
   "files": [
-    "lib/",
+    "dist/",
     "src/"
   ],
   "scripts": {
