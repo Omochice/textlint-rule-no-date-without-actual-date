@@ -1,6 +1,6 @@
 import type { TextlintRuleModule } from "@textlint/types";
 import { add, format } from "date-fns";
-import { isOption, type Marker, type MatchedText } from "./types";
+import { isOption, type Marker, type MatchedText } from "./types.ts";
 
 const fix = (marker: string, rule: Marker): string => {
   const today = new Date();

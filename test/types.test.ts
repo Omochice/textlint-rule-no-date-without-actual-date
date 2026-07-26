@@ -1,5 +1,6 @@
 import { ok } from "node:assert";
-import { isOption } from "../src/types";
+import { describe, it } from "node:test";
+import { isOption } from "../src/types.ts";
 
 describe("test about isOption", () => {
   it("should return true if it receive valid option schema", () => {

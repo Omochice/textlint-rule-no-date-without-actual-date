@@ -7,16 +7,23 @@
   ],
   "license": "MIT",
   "author": "Omochice",
-  "main": "lib/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
   "files": [
-    "lib/",
+    "dist/",
     "src/"
   ],
   "scripts": {
-    "build": "textlint-scripts build",
+    "build": "tsc",
     "check": "biome ci",
     "clean-pkg-json": "clean-pkg-json",
     "fmt": "npm-run-all2 fmt:*",
@@ -24,8 +31,8 @@
     "fmt:biome:format": "biome format --write .",
     "fmt:package": "sort-package-json",
     "prepack": "npm-run-all2 --sequential build clean-pkg-json",
-    "test": "textlint-scripts test",
-    "watch": "textlint-scripts build --watch"
+    "test": "node --test \"test/**/*.ts\"",
+    "watch": "tsc --watch"
   },
   "dependencies": {
     "date-fns": "^4.0.0",
@@ -34,16 +41,16 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.5",
     "@textlint/types": "15.7.1",
-    "@types/mocha": "10.0.10",
     "@types/node": "24.13.3",
-    "babel-plugin-static-fs": "3.0.0",
     "clean-pkg-json": "2.0.0",
     "npm-run-all2": "9.0.2",
     "sort-package-json": "4.0.0",
     "textlint": "15.7.1",
-    "textlint-scripts": "15.7.1",
     "textlint-tester": "15.7.1",
     "typescript": "7.0.2"
+  },
+  "peerDependencies": {
+    "textlint": "^13.0.0 || ^14.0.0 || ^15.0.0"
   },
   "packageManager": "pnpm@11.16.0",
   "devEngines": {

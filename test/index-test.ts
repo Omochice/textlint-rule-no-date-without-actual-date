@@ -1,5 +1,9 @@
-import TextLintTester from "textlint-tester";
-import rule from "../src/index";
+import textlintTester from "textlint-tester";
+import rule from "../src/index.ts";
+
+// textlint-tester is CommonJS and exposes the class as `exports.default`, which
+// Node's ESM interop surfaces as a property of the default import.
+const TextLintTester = textlintTester.default;
 
 const tester = new TextLintTester();
 
