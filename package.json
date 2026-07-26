@@ -50,7 +50,7 @@
     "packageManager": {
       "name": "pnpm",
       "version": "11.16.0",
-      "onFail": "error"
+      "onFail": "download"
     }
   }
 }
