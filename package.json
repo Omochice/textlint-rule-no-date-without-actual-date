@@ -1,6 +1,6 @@
 {
   "name": "textlint-rule-no-date-without-actual-date",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "textlint rule that disallow date without actual date.",
   "keywords": [
     "textlintrule"

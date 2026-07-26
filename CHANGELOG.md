@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v1.0.4...v2.0.0) (2026-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* the package is now an ES module. textlint v13.0.0 or later loads it with dynamic import(). Older textlint loads rules with require(), which only works on Node.js versions that allow require() of an ES module.
+
+### Features
+
+* publish as an ES module ([#1065](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/issues/1065)) ([c0c3d3c](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/commit/c0c3d3ced1fbd8ded315dfba08b7096fcefb2f8c))
+
 ## [1.0.4](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v1.0.3...v1.0.4) (2025-05-11)
 
 
