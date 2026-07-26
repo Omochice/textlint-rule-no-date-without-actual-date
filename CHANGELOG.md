@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v2.0.0...v2.0.1) (2026-07-26)
+
+
+### Bug Fixes
+
+* add repository metadata required for provenance publishing ([#1068](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/issues/1068)) ([c15028b](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/commit/c15028b238cd806bdde3d2a0954d3fd9017220fb))
+
 ## [2.0.0](https://github.com/Omochice/textlint-rule-no-date-without-actual-date/compare/v1.0.4...v2.0.0) (2026-07-26)
 
 
