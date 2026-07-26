@@ -5,6 +5,10 @@
   "keywords": [
     "textlintrule"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omochice/textlint-rule-no-date-without-actual-date.git"
+  },
   "license": "MIT",
   "author": "Omochice",
   "type": "module",
