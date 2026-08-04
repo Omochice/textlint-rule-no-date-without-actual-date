@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.6",
-    "@textlint/types": "15.7.1",
+    "@textlint/types": "15.8.0",
     "@types/node": "24.13.3",
     "clean-pkg-json": "2.0.0",
     "npm-run-all2": "9.0.3",
