@@ -49,7 +49,7 @@
     "clean-pkg-json": "2.0.0",
     "npm-run-all2": "9.0.3",
     "sort-package-json": "4.0.0",
-    "textlint": "15.7.1",
+    "textlint": "15.8.0",
     "textlint-tester": "15.7.1",
     "typescript": "7.0.2"
   },
