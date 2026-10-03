@@ -43,7 +43,7 @@
     "unknownutil": "^3.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.14",
+    "@biomejs/biome": "2.5.15",
     "@textlint/types": "15.8.0",
     "@types/node": "24.19.0",
     "clean-pkg-json": "2.0.0",
