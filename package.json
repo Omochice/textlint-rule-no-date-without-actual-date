@@ -56,11 +56,11 @@
   "peerDependencies": {
     "textlint": "^13.0.0 || ^14.0.0 || ^15.0.0"
   },
-  "packageManager": "pnpm@11.28.2",
+  "packageManager": "pnpm@11.28.3",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.28.2",
+      "version": "11.28.3",
       "onFail": "download"
     }
   }
