@@ -4,18 +4,4 @@
     "github>Omochice/personal-renovate-config#v2.0.0",
     "github>aquaproj/aqua-renovate-config#2.13.0",
   ],
-  customManagers: [
-    {
-      customType: "jsonata",
-      fileFormat: "yaml",
-      managerFilePatterns: [
-        ".github/workflows/check.yaml",
-      ],
-      matchStrings: [
-        "{ 'currentValue': jobs.`check-typescript`.strategy.matrix.node[0] }",
-      ],
-      datasourceTemplate: "node-version",
-      depNameTemplate: "node",
-    },
-  ],
 }
