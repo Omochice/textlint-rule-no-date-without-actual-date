@@ -48,7 +48,7 @@
     "@types/node": "24.19.2",
     "clean-pkg-json": "2.0.0",
     "npm-run-all2": "9.0.3",
-    "sort-package-json": "4.0.0",
+    "sort-package-json": "4.1.0",
     "textlint": "15.8.0",
     "textlint-tester": "15.8.0",
     "typescript": "7.0.2"
