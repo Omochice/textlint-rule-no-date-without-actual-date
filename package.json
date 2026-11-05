@@ -46,7 +46,7 @@
     "@biomejs/biome": "2.5.15",
     "@textlint/types": "15.8.0",
     "@types/node": "26.6.6",
-    "clean-pkg-json": "2.0.0",
+    "clean-pkg-json": "2.1.0",
     "npm-run-all2": "9.0.4",
     "sort-package-json": "4.1.0",
     "textlint": "15.8.0",
