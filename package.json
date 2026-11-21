@@ -49,12 +49,12 @@
     "clean-pkg-json": "2.1.0",
     "npm-run-all2": "9.0.4",
     "sort-package-json": "4.1.0",
-    "textlint": "15.8.0",
+    "textlint": "16.1.1",
     "textlint-tester": "16.1.1",
     "typescript": "7.0.2"
   },
   "peerDependencies": {
-    "textlint": "^13.0.0 || ^14.0.0 || ^15.0.0"
+    "textlint": "^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "devEngines": {
     "packageManager": {
