@@ -47,7 +47,7 @@
     "@textlint/types": "16.1.2",
     "@types/node": "26.6.6",
     "clean-pkg-json": "2.1.0",
-    "npm-run-all2": "9.0.4",
+    "npm-run-all2": "9.1.0",
     "sort-package-json": "4.1.0",
     "textlint": "16.1.2",
     "textlint-tester": "16.1.2",
